@@ -1,0 +1,17 @@
+{
+	"name": "vite_plugin_example",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@styleease/vite-plugin": "workspace:^",
+		"vite": "^4.3.9"
+	}
+}

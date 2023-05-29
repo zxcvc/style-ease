@@ -1,0 +1,20 @@
+{
+	"name": "styleease",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "pnpm rollup -c --bundleConfigAsCjs"
+	},
+	"workspaces": [
+		"packages/*"
+	],
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"rollup": "^3.23.0",
+		"rollup-plugin-typescript2": "^0.34.1",
+		"typescript": "^5.0.4"
+	}
+}
