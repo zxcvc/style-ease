@@ -10,7 +10,7 @@
 		"packages/*"
 	],
 	"files": [
-		"packages"
+		"packages/*"
 	],
 	"keywords": [
 		"style",
