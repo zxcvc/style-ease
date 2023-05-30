@@ -7,6 +7,9 @@ importers:
       rollup:
         specifier: ^3.23.0
         version: registry.npmmirror.com/rollup@3.23.0
+      rollup-plugin-terser:
+        specifier: ^7.0.2
+        version: registry.npmmirror.com/rollup-plugin-terser@7.0.2(rollup@3.23.0)
       rollup-plugin-typescript2:
         specifier: ^0.34.1
         version: registry.npmmirror.com/rollup-plugin-typescript2@0.34.1(rollup@3.23.0)(typescript@5.0.4)
@@ -4263,6 +4266,17 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  registry.npmmirror.com/jest-worker@26.6.2:
+    resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-worker/-/jest-worker-26.6.2.tgz}
+    name: jest-worker
+    version: 26.6.2
+    engines: {node: '>= 10.13.0'}
+    dependencies:
+      '@types/node': registry.npmmirror.com/@types/node@20.2.5
+      merge-stream: registry.npmmirror.com/merge-stream@2.0.0
+      supports-color: registry.npmmirror.com/supports-color@7.2.0
+    dev: true
+
   registry.npmmirror.com/jest-worker@27.5.1:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-worker/-/jest-worker-27.5.1.tgz}
     name: jest-worker
@@ -5144,6 +5158,22 @@ packages:
       glob: registry.npmmirror.com/glob@7.2.3
     dev: true
 
+  registry.npmmirror.com/rollup-plugin-terser@7.0.2(rollup@3.23.0):
+    resolution: {integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rollup-plugin-terser/-/rollup-plugin-terser-7.0.2.tgz}
+    id: registry.npmmirror.com/rollup-plugin-terser/7.0.2
+    name: rollup-plugin-terser
+    version: 7.0.2
+    deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+    peerDependencies:
+      rollup: ^2.0.0
+    dependencies:
+      '@babel/code-frame': registry.npmmirror.com/@babel/code-frame@7.21.4
+      jest-worker: registry.npmmirror.com/jest-worker@26.6.2
+      rollup: registry.npmmirror.com/rollup@3.23.0
+      serialize-javascript: registry.npmmirror.com/serialize-javascript@4.0.0
+      terser: registry.npmmirror.com/terser@5.17.6
+    dev: true
+
   registry.npmmirror.com/rollup-plugin-typescript2@0.34.1(rollup@3.23.0)(typescript@5.0.4):
     resolution: {integrity: sha512-P4cHLtGikESmqi1CA+tdMDUv8WbQV48mzPYt77TSTOPJpERyZ9TXdDgjSDix8Fkqce6soYz3+fa4lrC93IEkcw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rollup-plugin-typescript2/-/rollup-plugin-typescript2-0.34.1.tgz}
     id: registry.npmmirror.com/rollup-plugin-typescript2/0.34.1
@@ -5280,6 +5310,14 @@ packages:
       statuses: registry.npmmirror.com/statuses@2.0.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  registry.npmmirror.com/serialize-javascript@4.0.0:
+    resolution: {integrity: sha512-GaNA54380uFefWghODBWEGisLZFj00nS5ACs6yHa9nLqlLpVLO8ChDGeKRjZnV4Nh4n0Qi7nhYZD/9fCPzEqkw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/serialize-javascript/-/serialize-javascript-4.0.0.tgz}
+    name: serialize-javascript
+    version: 4.0.0
+    dependencies:
+      randombytes: registry.npmmirror.com/randombytes@2.1.0
     dev: true
 
   registry.npmmirror.com/serialize-javascript@6.0.1:
@@ -5485,6 +5523,15 @@ packages:
       has-flag: registry.npmmirror.com/has-flag@3.0.0
     dev: true
 
+  registry.npmmirror.com/supports-color@7.2.0:
+    resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/supports-color/-/supports-color-7.2.0.tgz}
+    name: supports-color
+    version: 7.2.0
+    engines: {node: '>=8'}
+    dependencies:
+      has-flag: registry.npmmirror.com/has-flag@4.0.0
+    dev: true
+
   registry.npmmirror.com/supports-color@8.1.1:
     resolution: {integrity: sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/supports-color/-/supports-color-8.1.1.tgz}
     name: supports-color
@@ -5532,7 +5579,7 @@ packages:
       schema-utils: registry.npmmirror.com/schema-utils@3.1.2
       serialize-javascript: registry.npmmirror.com/serialize-javascript@6.0.1
       terser: registry.npmmirror.com/terser@5.17.6
-      webpack: registry.npmmirror.com/webpack@5.84.1(webpack-cli@5.1.1)
+      webpack: registry.npmmirror.com/webpack@5.84.1
     dev: true
 
   registry.npmmirror.com/terser@5.17.6:

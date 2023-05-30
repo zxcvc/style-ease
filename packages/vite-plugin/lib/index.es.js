@@ -1,10 +1,1 @@
-import { transformHtml } from '@styleease/core';
-
-function style_ease_vite_plugin() {
-    return {
-        name: "style_ease_vite_plugin",
-        transformIndexHtml: transformHtml,
-    };
-}
-
-export { style_ease_vite_plugin };
+import{transformHtml as e}from"@styleease/core";function t(){return{name:"style_ease_vite_plugin",transformIndexHtml:e}}export{t as style_ease_vite_plugin};
