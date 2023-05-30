@@ -4,6 +4,9 @@ importers:
 
   .:
     devDependencies:
+      '@types/node':
+        specifier: ^20.2.5
+        version: registry.npmmirror.com/@types/node@20.2.5
       rollup:
         specifier: ^3.23.0
         version: registry.npmmirror.com/rollup@3.23.0
@@ -86,7 +89,7 @@ importers:
     devDependencies:
       vite:
         specifier: ^4.3.9
-        version: 4.3.9
+        version: 4.3.9(@types/node@20.2.5)
 
   packages/webpack-plugin:
     dependencies:
@@ -264,7 +267,7 @@ packages:
       is-number: 7.0.0
     dev: false
 
-  /vite@4.3.9:
+  /vite@4.3.9(@types/node@20.2.5):
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -289,6 +292,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': registry.npmmirror.com/@types/node@20.2.5
       esbuild: 0.17.19
       postcss: 8.4.24
       rollup: registry.npmmirror.com/rollup@3.23.0
