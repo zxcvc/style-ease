@@ -16,29 +16,38 @@ execSync("pnpm build");
 
 // mkdir;
 packages.forEach((item) => {
-	const pkg_dir = resolve(release_dir, item);
-	execSync(`mkdir ${pkg_dir}`);
-	const pkg_lib_dir = resolve(pkg_dir, "lib");
-	execSync(`mkdir ${pkg_lib_dir}`);
+    const pkg_dir = resolve(release_dir, item);
+    execSync(`mkdir ${pkg_dir}`);
+    const pkg_lib_dir = resolve(pkg_dir, "lib");
+    execSync(`mkdir ${pkg_lib_dir}`);
 });
 
 packages.forEach((item) => {
-	const pkg_dir = resolve(root_dir, "packages", item);
-	const target_dir = resolve(release_dir, item);
-	const origin = ["lib/*", "package.json"];
-	const target = ["lib", "package.json"];
-	for (let i = 0; i < origin.length; ++i) {
-		let o = origin[i];
-		let t = target[i];
-		o = resolve(pkg_dir, o);
-		t = resolve(target_dir, t);
-		execSync(`cp ${o} ${t}`);
-	}
+    const pkg_dir = resolve(root_dir, "packages", item);
+    const target_dir = resolve(release_dir, item);
+    const origin = ["lib/*", "package.json"];
+    const target = ["lib", "package.json"];
+    for (let i = 0; i < origin.length; ++i) {
+        let o = origin[i];
+        let t = target[i];
+        o = resolve(pkg_dir, o);
+        t = resolve(target_dir, t);
+        execSync(`cp ${o} ${t}`);
+    }
 });
 
-const package_delete_filed = ["devDependencies", "files", "workspaces", "scripts", "main"];
+const package_delete_filed = [
+    "devDependencies",
+    "files",
+    "workspaces",
+    "scripts",
+    "main",
+];
 
 package_delete_filed.forEach((item) => {
-	delete root_package[item];
+    delete root_package[item];
 });
-fs.writeFileSync(release_packagejson_path, JSON.stringify(root_package, null, 4));
+fs.writeFileSync(
+    release_packagejson_path,
+    JSON.stringify(root_package, null, 4)
+);

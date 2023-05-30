@@ -1,24 +1,24 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"outDir": "dist",
-		"sourceMap": false,
-		"target": "ES2017",
-		"useDefineForClassFields": false,
-		"module": "esnext",
-		"moduleResolution": "node",
-		"allowJs": false,
-		"strict": true,
-		"noUnusedLocals": true,
-		"experimentalDecorators": true,
-		"resolveJsonModule": true,
-		"esModuleInterop": true,
-		"removeComments": false,
-		"jsx": "preserve",
-		"lib": ["esnext", "dom"],
-		"rootDir": ".",
-		"paths": {
-			"@styleease/*": ["packages/*/src"]
-		}
-	}
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "dist",
+        "sourceMap": false,
+        "target": "ES2017",
+        "useDefineForClassFields": false,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "allowJs": false,
+        "strict": true,
+        "noUnusedLocals": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "removeComments": false,
+        "jsx": "preserve",
+        "lib": ["esnext", "dom"],
+        "rootDir": ".",
+        "paths": {
+            "@styleease/*": ["packages/*/src"]
+        }
+    }
 }

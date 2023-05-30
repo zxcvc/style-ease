@@ -1,30 +1,32 @@
 {
-	"name": "styleease",
-	"version": "1.0.3",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"build": "pnpm rollup -c --bundleConfigAsCjs"
-	},
-	"workspaces": [
-		"packages/*"
-	],
-	"files": [
-		"packages/*"
-	],
-	"keywords": [
-		"style",
-		"sass",
-		"scss",
-		"less"
-	],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"@types/node": "^20.2.5",
-		"rollup": "^3.23.0",
-		"rollup-plugin-terser": "^7.0.2",
-		"rollup-plugin-typescript2": "^0.34.1",
-		"typescript": "^5.0.4"
-	}
+    "name": "styleease",
+    "version": "1.0.3",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "pnpm rollup -c --bundleConfigAsCjs",
+        "format": "pnpm prettier --write ."
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "files": [
+        "packages/*"
+    ],
+    "keywords": [
+        "style",
+        "sass",
+        "scss",
+        "less"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.2.5",
+        "prettier": "^2.8.8",
+        "rollup": "^3.23.0",
+        "rollup-plugin-terser": "^7.0.2",
+        "rollup-plugin-typescript2": "^0.34.1",
+        "typescript": "^5.0.4"
+    }
 }
