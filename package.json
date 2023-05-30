@@ -9,7 +9,15 @@
 	"workspaces": [
 		"packages/*"
 	],
-	"keywords": [],
+	"files": [
+		"packages"
+	],
+	"keywords": [
+		"style",
+		"sass",
+		"scss",
+		"less"
+	],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
