@@ -5,17 +5,15 @@
 
 ### usage :
 
-#### install
+#### vite-plugin
 
 ```bash
-pnpm add -D @sytleease
+pnpm add -D @sytleease/vite-plugin
 ```
-
-#### vite-plugin
 
 ```javascript
 import { defineConfig } from "vite";
-import { style_ease_vite_plugin } from "@styleease/vite-plugin";
+import style_ease_vite_plugin from "@styleease/vite-plugin";
 export default defineConfig({
     plugins: [style_ease_vite_plugin()],
 });
@@ -23,9 +21,13 @@ export default defineConfig({
 
 #### webpack-plugin
 
+```bash
+pnpm add -D @sytleease/webpack-plugin
+```
+
 ```javascript
 const path = require("node:path");
-const { StyleEaseWebapckPlugin } = require("@styleease/webpack-plugin");
+const StyleEaseWebapckPlugin = require("@styleease/webpack-plugin");
 /**
  * @type {import('webpack').Configuration}
  */
