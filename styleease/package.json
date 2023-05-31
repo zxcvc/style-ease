@@ -1,7 +1,7 @@
 {
-    "name": "styleease",
     "version": "1.0.6",
     "description": "",
+    "module": "./index.es.js",
     "workspaces": [
         "packages/*"
     ],

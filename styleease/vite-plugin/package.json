@@ -1,16 +1,22 @@
 {
-    "name": "@styleease/vite-plugin",
-    "version": "1.0.0",
-    "description": "",
-    "main": "lib/index.js",
-    "module": "lib/index.es.js",
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "vite": "^4.3.9"
-    },
-    "dependencies": {
-        "@styleease/core": "workspace:^"
-    }
+  "name": "@styleease/vite-plugin",
+  "version": "1.0.7",
+  "main": "lib/index.js",
+  "module": "lib/index.es.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "@styleease/core": "workspace:^"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": ""
 }

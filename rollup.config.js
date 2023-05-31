@@ -9,7 +9,12 @@ export default defineConfig([
             { file: "./packages/core/lib/index.es.js", format: "es" },
             { file: "./packages/core/lib/index.cjs.js", format: "cjs" },
         ],
-        plugins: [ts(), terser()],
+        plugins: [
+            ts({
+                tsconfig: "./packages/core/tsconfig.json",
+            }),
+            terser(),
+        ],
         external: ["sass", "less", "cheerio"],
     },
     {
@@ -23,7 +28,12 @@ export default defineConfig([
                 name: "style_ease_vite_plugin",
             },
         ],
-        plugins: [ts(), terser()],
+        plugins: [
+            ts({
+                tsconfig: "./packages/vite-plugin/tsconfig.json",
+            }),
+            terser(),
+        ],
         external: ["@styleease/core"],
     },
     {
@@ -40,7 +50,12 @@ export default defineConfig([
                 name: "StyleEaseWebapckPlugin",
             },
         ],
-        plugins: [ts(), terser()],
+        plugins: [
+            ts({
+                tsconfig: "./packages/webpack-plugin/tsconfig.json",
+            }),
+            terser(),
+        ],
         external: ["@styleease/core"],
     },
 ]);

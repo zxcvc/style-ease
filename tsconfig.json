@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "baseUrl": ".",
-        "outDir": "dist",
+        "outDir": "lib",
         "sourceMap": false,
         "target": "ES2017",
         "useDefineForClassFields": false,
@@ -20,5 +20,6 @@
         "paths": {
             "@styleease/*": ["packages/*/src"]
         }
-    }
+    },
+    "include": ["./packages/**/src"]
 }
