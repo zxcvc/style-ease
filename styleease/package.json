@@ -1,7 +1,10 @@
 {
     "name": "styleease",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "",
+    "workspaces": [
+        "packages/*"
+    ],
     "keywords": [
         "style",
         "sass",

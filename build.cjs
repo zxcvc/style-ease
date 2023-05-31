@@ -3,7 +3,7 @@ const { resolve } = require("path");
 const fs = require("fs");
 
 const root_dir = resolve(__dirname, "./");
-const release_dir = resolve(root_dir, "@styleease");
+const release_dir = resolve(root_dir, "styleease");
 const root_packagejson_path = resolve(root_dir, "package.json");
 const root_package = require(root_packagejson_path);
 const release_packagejson_path = resolve(release_dir, "package.json");
