@@ -20,4 +20,4 @@ class StyleEaseWebapckPlugin {
         });
     }
 }
-export { StyleEaseWebapckPlugin };
+export default StyleEaseWebapckPlugin;
