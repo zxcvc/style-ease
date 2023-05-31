@@ -36,13 +36,7 @@ packages.forEach((item) => {
     }
 });
 
-const package_delete_filed = [
-    "devDependencies",
-    "files",
-    "workspaces",
-    "scripts",
-    "main",
-];
+const package_delete_filed = ["devDependencies", "files", "scripts", "main"];
 
 package_delete_filed.forEach((item) => {
     delete root_package[item];
